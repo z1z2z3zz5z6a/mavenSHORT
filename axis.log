@@ -1,0 +1,90 @@
+2018-12-15 20:18:15,295 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2018-12-15 20:18:15,345 50     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sat Dec 15 20:18:15 CST 2018]; root of context hierarchy
+2018-12-15 20:18:15,395 100    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [AppliCatinContext.xml]
+2018-12-15 20:18:15,395 100    [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [AppliCatinContext.xml]; nested exception is java.io.FileNotFoundException: class path resource [AppliCatinContext.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:194)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:620)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:521)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.io.FileNotFoundException: class path resource [AppliCatinContext.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 21 more
+2018-12-15 20:18:15,655 360    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Closing Root WebApplicationContext: startup date [Sat Dec 15 20:18:15 CST 2018]; root of context hierarchy
+2018-12-15 20:19:46,882 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2018-12-15 20:19:46,932 50     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sat Dec 15 20:19:46 CST 2018]; root of context hierarchy
+2018-12-15 20:19:46,962 80     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [AppliCatinContext.xml]
+2018-12-15 20:19:46,962 80     [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [AppliCatinContext.xml]; nested exception is java.io.FileNotFoundException: class path resource [AppliCatinContext.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:343)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:303)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:187)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:194)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:133)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:620)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:521)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4797)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5291)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: java.io.FileNotFoundException: class path resource [AppliCatinContext.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:329)
+	... 21 more
+2018-12-15 20:19:47,162 280    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Closing Root WebApplicationContext: startup date [Sat Dec 15 20:19:46 CST 2018]; root of context hierarchy
+2018-12-15 20:20:55,984 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2018-12-15 20:20:56,034 50     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Sat Dec 15 20:20:56 CST 2018]; root of context hierarchy
+2018-12-15 20:20:56,064 80     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [AppliCatinContext-web.xml]
+2018-12-15 20:20:56,204 220    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [AppliCatinContext-service.xml]
+2018-12-15 20:20:56,234 250    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [AppliCatinContext-dao.xml]
+2018-12-15 20:20:56,454 470    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-15 20:20:56,544 560    [ost-startStop-1] INFO         com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2018-12-15 20:20:56,574 590    [ost-startStop-1] INFO  m.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2018-12-15 20:20:57,034 1050   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 1050 ms
+2018-12-15 20:21:06,681 10697  [p-bio-80-exec-5] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2018-12-15 20:21:06,686 10702  [p-bio-80-exec-5] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sat Dec 15 20:21:06 CST 2018]; parent: Root WebApplicationContext
+2018-12-15 20:21:06,686 10702  [p-bio-80-exec-5] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [springMVC.xml]
+2018-12-15 20:21:06,796 10812  [p-bio-80-exec-5] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-12-15 20:21:06,975 10991  [p-bio-80-exec-5] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-12-15 20:21:06,988 11004  [p-bio-80-exec-5] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/images/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-12-15 20:21:06,991 11007  [p-bio-80-exec-5] INFO  andler.SimpleUrlHandlerMapping  - Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-12-15 20:21:07,031 11047  [p-bio-80-exec-5] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/items/jumpInsert]}" onto public java.lang.String com.itheima.Contrallor.AccountContrallor.jumpInsert()
+2018-12-15 20:21:07,032 11048  [p-bio-80-exec-5] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/items/insertOne]}" onto public void com.itheima.Contrallor.AccountContrallor.insertOne(com.itheima.domain.Items,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-12-15 20:21:07,032 11048  [p-bio-80-exec-5] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/items/deleteOneById]}" onto public void com.itheima.Contrallor.AccountContrallor.deleteOneById(java.lang.Integer,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-12-15 20:21:07,032 11048  [p-bio-80-exec-5] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/items/updateOne]}" onto public void com.itheima.Contrallor.AccountContrallor.updateOne(com.itheima.domain.Items,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest) throws java.lang.Exception
+2018-12-15 20:21:07,032 11048  [p-bio-80-exec-5] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/items/jumpUpdate]}" onto public org.springframework.web.servlet.ModelAndView com.itheima.Contrallor.AccountContrallor.jumpUpdate(int,javax.servlet.http.HttpServletResponse,javax.servlet.http.HttpServletRequest)
+2018-12-15 20:21:07,032 11048  [p-bio-80-exec-5] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/items/findAll]}" onto public org.springframework.web.servlet.ModelAndView com.itheima.Contrallor.AccountContrallor.findAll()
+2018-12-15 20:21:07,092 11108  [p-bio-80-exec-5] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sat Dec 15 20:21:06 CST 2018]; parent: Root WebApplicationContext
+2018-12-15 20:21:07,128 11144  [p-bio-80-exec-5] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Sat Dec 15 20:21:06 CST 2018]; parent: Root WebApplicationContext
+2018-12-15 20:21:07,217 11233  [p-bio-80-exec-5] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 535 ms
+2018-12-15 20:21:07,308 11324  [p-bio-80-exec-5] INFO  l.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge51d9z1dc49rofdavef|4d4a922a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge51d9z1dc49rofdavef|4d4a922a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql:///day23, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {password=******, user=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
