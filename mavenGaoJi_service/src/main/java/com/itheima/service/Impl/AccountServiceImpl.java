@@ -36,4 +36,7 @@ public class AccountServiceImpl implements AccountService {
     public void test1(){
         System.out.println("haha");
     }
+    public void test2(){
+        System.out.println("呵呵");
+    }
 }
